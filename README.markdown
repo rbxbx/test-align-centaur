@@ -13,4 +13,4 @@ Usage
     $ gem install test-align-centaur
     $ rspec -f TestAlignCentaur 
 
-    $ echo '--formatter TestAlignCentaur' >> ~/.rspec
+    $ echo '--format TestAlignCentaur' >> ~/.rspec
