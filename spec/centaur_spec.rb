@@ -1,15 +1,19 @@
 describe TestAlignCentaur do
 
+  def stall
+    sleep rand/16
+  end
+
   def self.pass
-    it { }
+    it { stall }
   end
 
   def self.fail
-    it { true.should be_false }
+    it { stall; true.should be_false }
   end
 
   def self.pend(reason)
-    it { pending(reason) }
+    it { stall; pending(reason) }
   end
 
   49.times { pass }
