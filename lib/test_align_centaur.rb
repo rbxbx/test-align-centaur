@@ -18,17 +18,17 @@ class TestAlignCentaur < RSpec::Core::Formatters::BaseTextFormatter
 
   def example_passed(example)
     super(example)
-    print green('.')
+    print success_color('.')
   end
 
   def example_pending(example)
     super(example)
-    print yellow('*')
+    print pending_color('*')
   end
 
   def example_failed(example)
     super(example)
-    print red('F')
+    print failure_color('F')
   end
 
   def start_dump
